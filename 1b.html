@@ -1,0 +1,31 @@
+<!-- Write a JavaScript program to find the area of a circle using radius (var and let- reassign and 
+observe the difference with var and let) and PI (const). -->
+
+<!DOCTYPE HTML>
+<htm>
+    <head>
+        <title>Area of circle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body bgcolor="cyan">
+        <h1 align="center">Area of circle</h1>
+        <script>
+            var radius=10;
+            const pi = 3.14;
+            area=pi*radius*radius;
+            document.write("Area of circle with var="+area+"</br>");
+            var radius=14;
+            area=pi*radius*radius;
+            document.write("Area of circle with var reassign var="+area+"</br>");
+            let radius1=10;
+            area=pi*radius1*radius1;
+            document.write("Area of circle with let="+area+"</br>");
+            let radius2=10;
+            area=pi*radius2*radius2;
+            document.write("Area of circle with let reassign let="+area+"</br>");
+        </script>
+
+
+    </body>
+</htm>

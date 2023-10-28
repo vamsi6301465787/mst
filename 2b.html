@@ -1,0 +1,34 @@
+<!-- Write JavaScript code to book movie tickets online and calculate the total price, considering 
+the number of tickets and price per ticket as Rs. 150. Also, apply a festive season discount of 
+10% and calculate the discounted amount -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Booking</title>
+</head>
+
+<body>
+    <h1>Book movie tickets online</h1><br>
+    Enter the number of tickets = <input id="number">
+    <button onclick="m()">PayOnly</button>
+    <p id="result"> </p>
+
+    <script>
+        function m() 
+        {
+            var n = document.getElementById("number").value;
+            price = n * 150;
+            discount = (price / 10);
+            f = price - discount;
+            document.getElementById("result").innerHTML = "Nuber of tickets is " + n + " price is " + f;
+
+        }
+    </script>
+
+</body>
+
+</html>

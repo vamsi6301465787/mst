@@ -1,0 +1,49 @@
+<!-- write a Javascript with classes,creating and inheriting classes. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lasses,creating and inheriting classes</title>
+    <script>
+        class Person
+        {
+            constructor(name,age)
+            {
+                this.name=name;
+                this.age=age;
+            }
+            details1()
+            {
+                return "Name : " +this.name+ "</br>"+"</br>" +"Age : "+this.age   
+            }
+        }
+        class Employee extends  Person
+        {
+            constructor(name,age,role,contact)
+            {
+                super(name,age);
+                this.role=role;
+                this.contact=contact;
+            }
+            details2()
+            {
+                return this.details1()+"</br>"+"</br>"+"Role :"+this.role+"</br>"+"</br>"+"contact :"+this.contact
+            }
+
+
+        }
+        function details(){
+            let d=new Employee("vamsi",20,"fullstackdeveloper","6301465787");
+            document.getElementById("result").innerHTML=d.details2();
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">Classes and Inheriting classes</h1><br><br>
+    <h1 align="center">Click here to get the deatils</h1>
+    <p id="result"> </p>
+    <input type="button" value="View Deatils" onclick="details()">
+    
+</body>
